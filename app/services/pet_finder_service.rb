@@ -1,14 +1,18 @@
 class PetFinderService
-  def initialize
-    @_daily_pet = nil
-  end
+  # def initialize
+  #   @_daily_pet = nil
+  # end
 
   def get_random_pet
     get_json("/pet.getRandom")
   end
 
+  def get_pet_by_id(id)
+    get_json("/pet.get?id=#{id}")
+  end
+
   def daily_pet
-    get_random_pet
+    result = get_random_pet
   end
 
   private
