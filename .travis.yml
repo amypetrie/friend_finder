@@ -1,7 +1,10 @@
 language: ruby
 before_install:
-- gem update --system
 - gem install bundler
+services:
+- postgresql
+before_script:
+- bundle exec rake db:{drop,create}
 deploy:
   provider: heroku
   api_key:
@@ -9,3 +12,6 @@ deploy:
   app:
     master: friend-finder-1808
     production: friend-finder-1808-api
+env:
+  global:
+    secure: hvBG0V3/1LRksQFNdzyplmRRerjxWxCJzfyNk9VYp0eKG1kRrkIV82rF8eESK3XCHxM4eDSsc4pH7JfpmbaEVlOwwSEXsTQ9ejQWH6u3cBiYFIRp7yNFzm+G/a4NUhKcnxuzTyNOQ3c40HjbYGoOkMa/XhvqpAYyyjTCjo5py4TLWgUBeXBlxZnwbsXPJFoSauXGmlvLmmMLPwYU6zK8uZfPAdMmqAdi4qPAQL1o8AeI23y53o4b0uD05NP0aXowY0fzCNhxeMpIvhg5KMIjGbcs7VX3yATH5/t/Ay2DJFvC5Mw1mB7IdJsXRJMwcfStH7575Pk5w1NNzbDczPwjlRATHHQV8QT7Xpuu04kQ5Zi/SfdzHeBTPyRaFxJcp7t689ZU4L+L8+HoP3N5rbC1k9+uj+L+3xGkqzh+G8hOibqO6hPRIfxxVHB5VHR3XhVIDyYxFTAaWYh7rEpaXf6OTXeeZZ5oxvOUTVMTd3vWnlvc8/ikuI2j/hQDQDU67xgNO/C7J1sW/k+7rzh6Sxy/Jhp6GSH+cbxx8jcGzRQXKGlIAz/DQsLe5eqfajlpW3H+w9IeYqAUm5PGEAuOgnlwJ1Kr/qTyCFhganRwO7/JgN7THyWvGLuCuTBKm3YuuXvwo0V9EZWkPU0cUUcUYxj2bOJ54c/lnqFr8DUWwfAE5v0=

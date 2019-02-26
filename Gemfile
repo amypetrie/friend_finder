@@ -28,7 +28,6 @@ gem 'faraday'
 gem 'figaro'
 gem 'pry'
 gem 'fast_jsonapi'
-gem 'bcrypt'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 gem 'rack-cors', require: 'rack/cors'
@@ -39,15 +38,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'factory_bot_rails'
-  gem 'shoulda-matchers'
   gem 'simplecov'
-  gem 'database_cleaner'
   gem 'vcr'
   gem 'webmock'
-  gem 'rake'
 end
 
 group :development do
