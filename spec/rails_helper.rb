@@ -29,12 +29,12 @@ WebMock.disable_net_connect!(allow: ['http://localhost:3000/'])
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
-begin
-  ActiveRecord::Migration.maintain_test_schema!
-rescue ActiveRecord::PendingMigrationError => e
-  puts e.to_s.strip
-  exit 1
-end
+# begin
+#   ActiveRecord::Migration.maintain_test_schema!
+# rescue ActiveRecord::PendingMigrationError => e
+#   puts e.to_s.strip
+#   exit 1
+# end
 
 SimpleCov.start "rails"
 SimpleCov.start do
