@@ -11,6 +11,12 @@ class PetFinderService
     get_json("/pet.get?id=#{id}")
   end
 
+  def search(filter)
+    search_params = "?"
+    filter.each { |key, value| search_params = search_params + key.to_s + "=" + value.to_s + "&" }
+    get_json("/pet.find#{search_params.chomp("&")}")
+  end
+
   def daily_pet
     result = get_random_pet
   end
