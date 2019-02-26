@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe "GET /api/v1/daily_pet" do
   it "returns a random pet" do
-    uri_template = Addressable::Template.new "api.petfinder.com/pet.getRandom"
-    stub_request(:get, uri_template).
-      to_return(body: File.read("./spec/fixtures/petfinder_find_pet_results.json"))
+    # uri_template = Addressable::Template.new "api.petfinder.com/pet.getRandom"
+    # stub_request(:get, uri_template).
+    #   to_return(body: File.read("./spec/fixtures/petfinder_find_pet_results.json"))
 
     get '/api/v1/daily_pet'
 
