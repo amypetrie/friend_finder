@@ -1,0 +1,126 @@
+{
+    "@encoding": "iso-8859-1",
+    "@version": "1.0",
+    "petfinder": {
+        "pet": {
+            "options": {
+                "option": [
+                    {
+                        "$t": "altered"
+                    },
+                    {
+                        "$t": "hasShots"
+                    }
+                ]
+            },
+            "status": {
+                "$t": "A"
+            },
+            "contact": {
+                "phone": {},
+                "state": {
+                    "$t": "IA"
+                },
+                "address2": {},
+                "email": {
+                    "$t": "social@arl-iowa.org"
+                },
+                "city": {
+                    "$t": "Des Moines"
+                },
+                "zip": {
+                    "$t": "50313"
+                },
+                "fax": {},
+                "address1": {
+                    "$t": "5452 N.E. 22nd St."
+                }
+            },
+            "age": {
+                "$t": "Adult"
+            },
+            "size": {
+                "$t": "M"
+            },
+            "media": {
+                "photos": {
+                    "photo": [
+                        {
+                            "@size": "pnt",
+                            "$t": "http://photos.petfinder.com/photos/pets/42937042/1/?bust=1538797342&width=60&-pnt.jpg",
+                            "@id": "1"
+                        },
+                        {
+                            "@size": "fpm",
+                            "$t": "http://photos.petfinder.com/photos/pets/42937042/1/?bust=1538797342&width=95&-fpm.jpg",
+                            "@id": "1"
+                        },
+                        {
+                            "@size": "x",
+                            "$t": "http://photos.petfinder.com/photos/pets/42937042/1/?bust=1538797342&width=500&-x.jpg",
+                            "@id": "1"
+                        },
+                        {
+                            "@size": "pn",
+                            "$t": "http://photos.petfinder.com/photos/pets/42937042/1/?bust=1538797342&width=300&-pn.jpg",
+                            "@id": "1"
+                        },
+                        {
+                            "@size": "t",
+                            "$t": "http://photos.petfinder.com/photos/pets/42937042/1/?bust=1538797342&width=50&-t.jpg",
+                            "@id": "1"
+                        }
+                    ]
+                }
+            },
+            "id": {
+                "$t": "42937042"
+            },
+            "shelterPetId": {
+                "$t": "145042"
+            },
+            "breeds": {
+                "breed": {
+                    "$t": "Domestic Medium Hair"
+                }
+            },
+            "name": {
+                "$t": "Siri"
+            },
+            "sex": {
+                "$t": "F"
+            },
+            "description": {
+                "$t": "This cat is participating in our Camp Purr program, which is designed for feral or very semi-feral cats that would be happiest living outside as barn cats. Adopters must provide shelter and food/water to these cats year round and need to be willing to work with our Camp Purr team to ensure these cats are acclimated appropriately and humanely to a new barn cat environment. Because these cats are familiar with the other cats they are living with currently, we require that all Camp Purr cats be adopted with at least one other Camp Purr cat. The adoption fee for each cat in this program is just $25, and all cats have been spayed/neutered, microchipped and vaccinated. To learn more about this cat or other Camp Purr cats, please contact Betsy at bsalmon@arl-iowa.org. Primary Color: Grey Weight: 8.9lbs Age: 3yrs 8mths 2wks Animal has been Spayed"
+            },
+            "mix": {
+                "$t": "yes"
+            },
+            "shelterId": {
+                "$t": "IA14"
+            },
+            "lastUpdate": {
+                "$t": "2018-10-05T07:19:52Z"
+            },
+            "animal": {
+                "$t": "Cat"
+            }
+        },
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "header": {
+            "timestamp": {
+                "$t": "2019-02-26T18:42:30Z"
+            },
+            "status": {
+                "message": {},
+                "code": {
+                    "$t": "100"
+                }
+            },
+            "version": {
+                "$t": "0.1"
+            }
+        },
+        "@xsi:noNamespaceSchemaLocation": "http://api.petfinder.com/schemas/0.9/petfinder.xsd"
+    }
+}
