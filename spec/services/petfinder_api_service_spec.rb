@@ -3,7 +3,7 @@ require "rails_helper"
 describe "PetFinder API Service" do
 
   it "returns a random pet ID" do
-    VCR.use_cassette("petfinder_get_random_pet") do
+    VCR.use_cassette("petfinder_get_random_pet", :record => :new_episodes) do
       service = PetFinderService.new
 
       results = service.get_random_pet
@@ -17,7 +17,7 @@ describe "PetFinder API Service" do
   end
 
   it "returns a pet's information by ID" do
-    VCR.use_cassette("petfinder_get_pet_by_id") do
+    VCR.use_cassette("petfinder_get_pet_by_id", :record => :new_episodes) do
       service = PetFinderService.new
 
       results = service.get_pet_by_id(44046167)
@@ -38,7 +38,7 @@ describe "PetFinder API Service" do
   end
 
   it "returns a collection of pets based on search params" do
-    VCR.use_cassette("petfinder_search_pets") do
+    VCR.use_cassette("petfinder_search_pets", :record => :new_episodes) do
       service = PetFinderService.new
 
       filter = {"location": "denver,co", "sex": "M", "animal": "dog"}
