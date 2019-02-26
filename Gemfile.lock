@@ -188,7 +188,6 @@ DEPENDENCIES
   puma (~> 3.11)
   rack-cors
   rails (~> 5.2.2)
-  rake
   rspec-rails
   simplecov
   tzinfo-data
