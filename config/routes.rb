@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get "/daily_pet", to: "pets#show", :id => "random"
+      get "/search", to: "search#new"
     end
   end
 
