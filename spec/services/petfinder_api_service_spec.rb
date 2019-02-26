@@ -41,7 +41,7 @@ describe "PetFinder API Service" do
     VCR.use_cassette("petfinder_search_pets") do
       service = PetFinderService.new
 
-      filter = {"location": "denver,co"}
+      filter = {"location": "denver,co", "sex": "M", "animal": "dog"}
       results = service.search(filter)
 
       expect(results).to be_a Hash
