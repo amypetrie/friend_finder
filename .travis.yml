@@ -7,8 +7,8 @@ services:
 addons:
   postgresql: "11.1"
 dist: trusty
-before_script:
-  - psql -c 'create database friend_finder_test;' -U postgres
+script:
+  - bundle exec rspec
 deploy:
   provider: heroku
   api_key:
