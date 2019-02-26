@@ -11,6 +11,6 @@ class Api::V1::SearchController < ApplicationController
   private
 
   def search_params
-    params.permit(:location, :sex, :animal_type)
+    params.permit(:location, :sex, :animal)
   end
 end
