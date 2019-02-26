@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.petfinder.com/pet.getRandom?format=json&key=<petfinder_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Tue, 26 Feb 2019 03:48:22 GMT
+      vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      content-length:
+      - '251'
+      connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"@encoding":"iso-8859-1","@version":"1.0","petfinder":{"@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","petIds":{"id":{"$t":"40783502"}},"header":{"timestamp":{"$t":"2019-02-26T03:48:22Z"},"status":{"message":{},"code":{"$t":"100"}},"version":{"$t":"0.1"}},"@xsi:noNamespaceSchemaLocation":"http://api.petfinder.com/schemas/0.9/petfinder.xsd"}}'
+    http_version: 
+  recorded_at: Tue, 26 Feb 2019 03:48:22 GMT
+recorded_with: VCR 4.0.0
