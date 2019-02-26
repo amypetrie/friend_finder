@@ -17,34 +17,34 @@ class Pet
   end
 
   def sex
-    @_sex ||= filter[:petfinder][:pet][:sex][:$t]
+    @_sex ||= filter[:sex][:$t]
   end
 
   def animal_type
-    @_animal_type ||= filter[:petfinder][:pet][:animal][:$t]
+    @_animal_type ||= filter[:animal][:$t]
   end
 
   def location
-    @_location ||= filter[:petfinder][:pet][:contact][:city][:$t].to_s + ", " + filter[:petfinder][:pet][:contact][:state][:$t].to_s
+    @_location ||= filter[:contact][:city][:$t].to_s + ", " + filter[:contact][:state][:$t].to_s
   end
 
   def description
-    @_description ||= filter[:petfinder][:pet][:description][:$t]
+    @_description ||= filter[:description][:$t]
   end
 
   def contact_email
-    @_contact_email ||= filter[:petfinder][:pet][:contact][:email][:$t]
+    @_contact_email ||= filter[:contact][:email][:$t]
   end
 
   def picture_url
-    @_picture_url ||= filter[:petfinder][:pet][:media][:photos][:photo].last[:$t]
+    @_picture_url ||= filter[:media][:photos][:photo].last[:$t] unless filter[:media][:photos] == nil
   end
 
   def petfinder_id
-    @_petfinder_id ||= filter[:petfinder][:pet][:id][:$t]
+    @_petfinder_id ||= filter[:id][:$t]
   end
 
   def name
-    @_name ||= filter[:petfinder][:pet][:name][:$t]
+    @_name ||= filter[:name][:$t]
   end
 end
