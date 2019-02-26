@@ -1,0 +1,27 @@
+{
+    "@encoding": "iso-8859-1",
+    "@version": "1.0",
+    "petfinder": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "petIds": {
+            "id": {
+                "$t": "42937042"
+            }
+        },
+        "header": {
+            "timestamp": {
+                "$t": "2019-02-26T18:41:34Z"
+            },
+            "status": {
+                "message": {},
+                "code": {
+                    "$t": "100"
+                }
+            },
+            "version": {
+                "$t": "0.1"
+            }
+        },
+        "@xsi:noNamespaceSchemaLocation": "http://api.petfinder.com/schemas/0.9/petfinder.xsd"
+    }
+}
