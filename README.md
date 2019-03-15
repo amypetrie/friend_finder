@@ -5,8 +5,8 @@ Friend Finder API is a RESTful API built in Rails 5.2.
 Please review the below instructions to get the repository up and running on your local machine for development and testing purposes.
 
 The base URL for the API is https://friend-finder-18081-api.herokuapp.com/. <br>
-Visit the front end repo  here: https://amypetrie.github.io/friend_finder_fe/.
-
+Visit the <b>front-end repo<b>  here: https://github.com/amypetrie/friend_finder_fe. <br>
+Visit the site here: https://amypetrie.github.io/friend_finder_fe/.
 ## Table of Contents
 
 * Endpoint Explanation
